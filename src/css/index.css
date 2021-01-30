@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+:root {
+  --white: #ebedf3;
+  --grey: #bdbdbd;
+  --darkgrey: #676767;
+  --blue: #6699cc;
+  --darkblue: #003b6d;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  min-height: 101vh;
+  background: var(--blue);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--darkblue);
+  color: var(--grey);
+  padding: 2rem;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  outline: transparent;
+  transition: all 0.15s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background: var(--darkblue);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 6rem;
+  flex: 1;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 4rem;
+}
+
+.general-form {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.general-form h2 {
+  font-size: 1rem;
+}
+
+form h2 {
+  font-size: 3.5rem;
+  margin: auto;
+}
+
+label,
+input,
+button {
+  font-size: 2rem;
+}
+
+label {
+  padding: 2rem 0 0.5rem 1rem;
+  color: var(--white);
+}
+
+input {
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--darkblue);
+  outline: transparent;
+}
+
+input:focus {
+  box-shadow: inset 0px 1px 5px var(--darkblue);
+}
+
+/* DISPLAYED FORM */
+/* ---------------------------------------------------- */
+.cv-form {
+  background: var(--grey);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%;
+}
+
+.cv-form h2 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.cv-form h3 {
+  font-size: 2rem;
+  padding: 0.1rem;
+  color: var(--darkblue);
+}
+
+.general,
+.info {
+  position: relative;
+}
+
+.general {
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+i {
+  color: var(--white);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.75rem;
+  transition: all 0.2s ease;
+  transform: rotate(0);
+}
+
+.edit {
+  right: 4rem;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--blue);
+  transform: rotate(25deg);
+}
+
+.info {
+  background: var(--darkgrey);
+  color: var(--grey);
+  border-top: 1px solid var(--darkblue);
+  padding: 2rem;
+  margin: 1rem;
+  flex: 2;
+}
+
+.info h2 {
+  padding: 1rem 0 2rem 0;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.info form h2 {
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+.info h4 {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
+
+.info h3 {
+  color: var(--white);
+}
+
+.info p {
+  font-size: 1.5rem;
+}
+
+.info .item {
+  box-shadow: 0 0 5px black;
+  background: var(--darkblue);
+  margin: 2rem;
+  padding: 2rem;
+  color: var(--grey);
+  position: relative;
+}
+
+.info .item i {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 1050px) {
+  .cv-form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info,
+  .general,
+  .general-form {
+    width: 90%;
+  }
+}
