@@ -147,7 +147,7 @@ i {
 i:hover {
   cursor: pointer;
   color: var(--blue);
-  transform: rotate(25deg);
+  transform: rotate(45deg);
 }
 
 .info {
